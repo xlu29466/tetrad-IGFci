@@ -20,50 +20,54 @@ import edu.cmu.tetrad.util.RandomUtil;
 import edu.pitt.dbmi.data.reader.tabular.VerticalDiscreteTabularDatasetFileReader;
 import edu.pitt.dbmi.data.reader.tabular.VerticalDiscreteTabularDatasetReader;
 
-
+/// This version of TestIGFCI_TCGA running test on a block data defined by "startCase" and "endCase" by Xinghua LU
 public class TestIGFCI_TCGA {
 	public static void main(String[] args) {
 		// read and process input arguments
 		String data_path =  System.getProperty("user.dir"); 
 		boolean threshold = true;
 		double alpha = 0, cutoff = 0.5, kappa = 0.5;
-		int nbs = 1;
+		int nbs = 1, startCase = 0, endCase = 0;
 
 		System.out.println(Arrays.asList(args));
 		String data_name="gsva_dis_25" , knowledge_name = "forbid_pairs_nodes2";
 		for ( int i = 0; i < args.length; i++ ) {   
 			switch (args[i]) {
-			case "-th":
-				threshold = Boolean.parseBoolean(args[i+1]);
-				break;	
-			case "-alpha":
-				alpha = Double.parseDouble(args[i+1]);
-				break;
-			case "-cutoff":
-				cutoff = Double.parseDouble(args[i+1]);
-				break;
-			case "-kappa":
-				kappa = Double.parseDouble(args[i+1]);
-				break;
-			case "-data":
-				data_name = args[i+1];
-				break;
-			case "-knowledge":
-				knowledge_name = args[i+1];
-				break;
-			case "-dir":
-				data_path = args[i+1];
-				break;
-			case "-bs":
-				nbs = Integer.parseInt(args[i+1]);
-				break;
+				case "-th":
+					threshold = Boolean.parseBoolean(args[i+1]);
+					break;	
+				case "-alpha":
+					alpha = Double.parseDouble(args[i+1]);
+					break;
+				case "-cutoff":
+					cutoff = Double.parseDouble(args[i+1]);
+					break;
+				case "-kappa":
+					kappa = Double.parseDouble(args[i+1]);
+					break;
+				case "-data":
+					data_name = args[i+1];
+					break;
+				case "-knowledge":
+					knowledge_name = args[i+1];
+					break;
+				case "-dir":
+					data_path = args[i+1];
+					break;
+				case "-bs":
+					nbs = Integer.parseInt(args[i+1]);
+					break;
+				case "-startCase":
+					startCase = Integer.parseInt(args[i+1]);
+				case "-endCase":
+					endCase = Integer.parseInt(args[i+1]);
 			}
 		}
 
 		TestIGFCI_TCGA t = new TestIGFCI_TCGA();
-		t.test_sim(alpha, threshold, cutoff, kappa, data_name, knowledge_name, data_path, nbs);
+		t.test_sim(alpha, threshold, cutoff, kappa, data_name, knowledge_name, data_path, nbs, startCase, endCase);
 	}
-	public void test_sim(double alpha, boolean threshold, double cutoff, double kappa, String data_name, String knowledge_name,  String data_path, int nbs){ //int numVars, double edgesPerNode, double latent, int numCases, int numTests, int numActualTest, int numSim, String data_path, int time, long seed){
+	public void test_sim(double alpha, boolean threshold, double cutoff, double kappa, String data_name, String knowledge_name,  String data_path, int nbs, int startCase, int endCase){ //int numVars, double edgesPerNode, double latent, int numCases, int numTests, int numActualTest, int numSim, String data_path, int time, long seed){
 
 		RandomUtil.getInstance().setSeed(1454147771L + 100 * nbs);
 
@@ -104,7 +108,9 @@ public class TestIGFCI_TCGA {
 		GraphUtils.saveGraph(graphP, filePop, false);
 
 		// run leave-one-out cross-validation over the training set to learn an instance-specific PAG for each sample
-		for (int i = 0; i < trainDataOrig.getNumRows(); i++){
+		// If start and end are not defined, run through all cases
+		if (endCase == 0) 	endCase = trainDataOrig.getNumRows();
+		for (int i = startCase; i < endCase + 1; i++){
 			System.out.println("case i: " + i);
 			DataSet trainData = trainDataOrig.copy();
 			DataSet test = trainData.subsetRows(new int[]{i});
@@ -131,7 +137,6 @@ public class TestIGFCI_TCGA {
 			File fileIs = new File(dir, outputFileName);
 			GraphUtils.saveGraph(graphI, fileIs, false);
 		}
-
 	}
 	private static DataSet readData(String pathToData) {
 		Path trainDataFile = Paths.get(pathToData);

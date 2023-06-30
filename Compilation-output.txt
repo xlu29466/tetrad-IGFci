@@ -1,0 +1,862 @@
+parallels@parallels-Parallels-Virtual-Platform:~/Downloads/tetrad-IGFci-master$ mvn clean package -Dmaven.test.skip=true -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Tetrad Project                                                     [pom]
+[INFO] data-reader                                                        [jar]
+[INFO] tetrad-lib                                                         [jar]
+[INFO] tetrad-gui                                                         [jar]
+[INFO] 
+[INFO] ---------------------------< edu.cmu:tetrad >---------------------------
+[INFO] Building Tetrad Project 6.8.0-SNAPSHOT                             [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad ---
+[INFO] 
+[INFO] ---------------------< edu.pitt.dbmi:data-reader >----------------------
+[INFO] Building data-reader 6.8.0-SNAPSHOT                                [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml (6.1 kB at 13 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ data-reader ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ data-reader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/parallels/Downloads/tetrad-IGFci-master/data-reader/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ data-reader ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /home/parallels/Downloads/tetrad-IGFci-master/data-reader/target/classes
+[WARNING] /home/parallels/Downloads/tetrad-IGFci-master/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/parallels/Downloads/tetrad-IGFci-master/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ data-reader ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ data-reader ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ data-reader ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ data-reader ---
+[INFO] Building jar: /home/parallels/Downloads/tetrad-IGFci-master/data-reader/target/data-reader-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-lib >-------------------------
+[INFO] Building tetrad-lib 6.8.0-SNAPSHOT                                 [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-lib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-lib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1053 source files to /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/target/classes
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/src/main/java/edu/cmu/tetrad/data/simulation/LoadContinuousDataAndSingleGraph.java: Some input files use or override a deprecated API.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/src/main/java/edu/cmu/tetrad/data/simulation/LoadContinuousDataAndSingleGraph.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/src/main/java/edu/cmu/tetrad/graph/OrderedPair.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/src/main/java/edu/cmu/tetrad/graph/OrderedPair.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ tetrad-lib ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 1 file to /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/target/classes/manual
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-lib ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-lib ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-lib ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tetrad-lib ---
+[INFO] Building jar: /home/parallels/Downloads/tetrad-IGFci-master/tetrad-lib/target/tetrad-lib-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-gui >-------------------------
+[INFO] Building tetrad-gui 6.8.0-SNAPSHOT                                 [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/tetrad-db/1.0.0/tetrad-db-1.0.0.pom
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/tetrad-db/1.0.0/tetrad-db-1.0.0.pom (2.6 kB at 13 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-parent/1.4.5.RELEASE/spring-boot-starter-parent-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-parent/1.4.5.RELEASE/spring-boot-starter-parent-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/1.4.5.RELEASE/spring-boot-starter-parent-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/1.4.5.RELEASE/spring-boot-starter-parent-1.4.5.RELEASE.pom (7.4 kB at 151 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-dependencies/1.4.5.RELEASE/spring-boot-dependencies-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-dependencies/1.4.5.RELEASE/spring-boot-dependencies-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.4.5.RELEASE/spring-boot-dependencies-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/1.4.5.RELEASE/spring-boot-dependencies-1.4.5.RELEASE.pom (89 kB at 1.1 MB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-framework-bom/4.3.7.RELEASE/spring-framework-bom-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-framework-bom/4.3.7.RELEASE/spring-framework-bom-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.3.7.RELEASE/spring-framework-bom-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.3.7.RELEASE/spring-framework-bom-4.3.7.RELEASE.pom (5.1 kB at 135 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/spring-data-releasetrain/Hopper-SR8/spring-data-releasetrain-Hopper-SR8.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/spring-data-releasetrain/Hopper-SR8/spring-data-releasetrain-Hopper-SR8.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Hopper-SR8/spring-data-releasetrain-Hopper-SR8.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Hopper-SR8/spring-data-releasetrain-Hopper-SR8.pom (4.4 kB at 74 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/build/spring-data-build/1.8.8.RELEASE/spring-data-build-1.8.8.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/build/spring-data-build/1.8.8.RELEASE/spring-data-build-1.8.8.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.8.8.RELEASE/spring-data-build-1.8.8.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/1.8.8.RELEASE/spring-data-build-1.8.8.RELEASE.pom (5.4 kB at 155 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/integration/spring-integration-bom/4.3.8.RELEASE/spring-integration-bom-4.3.8.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/integration/spring-integration-bom/4.3.8.RELEASE/spring-integration-bom-4.3.8.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/4.3.8.RELEASE/spring-integration-bom-4.3.8.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/4.3.8.RELEASE/spring-integration-bom-4.3.8.RELEASE.pom (8.5 kB at 192 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/security/spring-security-bom/4.1.4.RELEASE/spring-security-bom-4.1.4.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/security/spring-security-bom/4.1.4.RELEASE/spring-security-bom-4.1.4.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.1.4.RELEASE/spring-security-bom-4.1.4.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/4.1.4.RELEASE/spring-security-bom-4.1.4.RELEASE.pom (4.3 kB at 79 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.pom (2.9 kB at 85 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starters/1.4.5.RELEASE/spring-boot-starters-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starters/1.4.5.RELEASE/spring-boot-starters-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.4.5.RELEASE/spring-boot-starters-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.4.5.RELEASE/spring-boot-starters-1.4.5.RELEASE.pom (6.6 kB at 179 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-parent/1.4.5.RELEASE/spring-boot-parent-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-parent/1.4.5.RELEASE/spring-boot-parent-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.4.5.RELEASE/spring-boot-parent-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.4.5.RELEASE/spring-boot-parent-1.4.5.RELEASE.pom (26 kB at 498 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.pom (1.7 kB at 27 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.pom (10 kB at 234 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.pom (2.5 kB at 66 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.pom (5.0 kB at 136 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.pom (2.7 kB at 96 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.pom (2.5 kB at 47 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.pom (1.7 kB at 49 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.pom (20 kB at 463 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.pom (1.3 kB at 29 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom (13 kB at 303 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom (18 kB at 294 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom (4.4 kB at 125 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom (2.8 kB at 63 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.22/slf4j-parent-1.7.22.pom (14 kB at 338 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.pom (959 B at 31 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.24/slf4j-parent-1.7.24.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-parent/1.7.24/slf4j-parent-1.7.24.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.24/slf4j-parent-1.7.24.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.24/slf4j-parent-1.7.24.pom (14 kB at 375 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.pom (3.8 kB at 87 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.pom (986 B at 14 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.pom (1.1 kB at 20 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom (28 kB at 667 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.pom (1.2 kB at 29 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom (1.0 kB at 25 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.pom (1.2 kB at 8.4 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.pom (1.5 kB at 44 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.pom (1.3 kB at 23 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.pom (3.5 kB at 107 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.pom (3.2 kB at 75 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.pom (3.1 kB at 67 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom (5.9 kB at 88 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/jboss-parent/15/jboss-parent-15.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/jboss-parent/15/jboss-parent-15.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom (32 kB at 543 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom (2.2 kB at 53 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom (9.5 kB at 227 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/antlr/antlr/2.7.7/antlr-2.7.7.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/antlr/antlr/2.7.7/antlr-2.7.7.pom
+Downloading from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom (632 B at 18 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom (5.7 kB at 179 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/jboss-parent/12/jboss-parent-12.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/jboss-parent/12/jboss-parent-12.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom (32 kB at 644 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom (6.8 kB at 205 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom (1.9 kB at 54 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.pom (3.0 kB at 66 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom (14 kB at 255 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom (4.8 kB at 150 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.pom (17 kB at 407 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/build/spring-data-parent/1.8.8.RELEASE/spring-data-parent-1.8.8.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/build/spring-data-parent/1.8.8.RELEASE/spring-data-parent-1.8.8.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/1.8.8.RELEASE/spring-data-parent-1.8.8.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/1.8.8.RELEASE/spring-data-parent-1.8.8.RELEASE.pom (23 kB at 406 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-framework-bom/4.2.9.RELEASE/spring-framework-bom-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-framework-bom/4.2.9.RELEASE/spring-framework-bom-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.2.9.RELEASE/spring-framework-bom-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.2.9.RELEASE/spring-framework-bom-4.2.9.RELEASE.pom (5.1 kB at 51 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.pom (7.5 kB at 167 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-core/4.2.9.RELEASE/spring-core-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-core/4.2.9.RELEASE/spring-core-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.2.9.RELEASE/spring-core-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.2.9.RELEASE/spring-core-4.2.9.RELEASE.pom (2.5 kB at 83 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.pom (2.5 kB at 60 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.pom (963 B at 29 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.pom (7.5 kB at 189 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-jdbc/4.2.9.RELEASE/spring-jdbc-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-jdbc/4.2.9.RELEASE/spring-jdbc-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.2.9.RELEASE/spring-jdbc-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.2.9.RELEASE/spring-jdbc-4.2.9.RELEASE.pom (3.5 kB at 101 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.pom (3.4 kB at 50 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.pom (5.0 kB at 90 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-aop/4.2.9.RELEASE/spring-aop-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-aop/4.2.9.RELEASE/spring-aop-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.2.9.RELEASE/spring-aop-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.2.9.RELEASE/spring-aop-4.2.9.RELEASE.pom (2.9 kB at 34 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom (363 B at 11 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.pom (1.7 kB at 31 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.pom (3.6 kB at 91 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom (13 kB at 289 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom (35 kB at 861 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom (11 kB at 313 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom (4.0 kB at 128 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom (4.6 kB at 128 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom (5.2 kB at 202 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.pom (6.0 kB at 175 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/classmate/1.1.0/classmate-1.1.0.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/classmate/1.1.0/classmate-1.1.0.pom
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.1.0/classmate-1.1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.1.0/classmate-1.1.0.pom (6.6 kB at 243 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.pom
+Downloading from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.pom (11 kB at 257 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.pom (12 kB at 285 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.pom (1.3 kB at 24 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd/causal-tetrad-rest-client/0.1.0/causal-tetrad-rest-client-0.1.0.pom
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd/causal-tetrad-rest-client/0.1.0/causal-tetrad-rest-client-0.1.0.pom (3.9 kB at 26 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/commons-codec/commons-codec/1.10/commons-codec-1.10.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/commons-codec/commons-codec/1.10/commons-codec-1.10.pom
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom (12 kB at 387 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/commons/commons-parent/35/commons-parent-35.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/commons/commons-parent/35/commons-parent-35.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom (58 kB at 1.2 MB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/apache/15/apache-15.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/apache/15/apache-15.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom (15 kB at 462 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom (5.5 kB at 108 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom (13 kB at 382 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom (4.8 kB at 165 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom (2.8 kB at 99 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom (14 kB at 365 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.pom (18 kB at 414 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.6.2/log4j-2.6.2.pom (52 kB at 1.3 MB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.pom (8.7 kB at 206 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd-commons/0.3.1/ccd-commons-0.3.1.pom
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd-commons/0.3.1/ccd-commons-0.3.1.pom (1.3 kB at 8.5 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/tetrad-db/1.0.0/tetrad-db-1.0.0.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.jar
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/tetrad-db/1.0.0/tetrad-db-1.0.0.jar (30 kB at 147 kB/s)
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/antlr/antlr/2.7.7/antlr-2.7.7.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd/causal-tetrad-rest-client/0.1.0/causal-tetrad-rest-client-0.1.0.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd-commons/0.3.1/ccd-commons-0.3.1.jar
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd/causal-tetrad-rest-client/0.1.0/causal-tetrad-rest-client-0.1.0.jar (42 kB at 47 kB/s)
+Downloaded from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/pitt/dbmi/ccd-commons/0.3.1/ccd-commons-0.3.1.jar (20 kB at 19 kB/s)
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/antlr/antlr/2.7.7/antlr-2.7.7.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.5.RELEASE/spring-boot-starter-data-jpa-1.4.5.RELEASE.jar (2.6 kB at 59 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar (309 kB at 2.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.4.5.RELEASE/spring-boot-starter-1.4.5.RELEASE.jar (2.3 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.5.RELEASE/spring-boot-starter-logging-1.4.5.RELEASE.jar (2.3 kB at 13 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar (4.6 kB at 22 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar (24 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar (475 kB at 918 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.5.RELEASE/spring-boot-starter-aop-1.4.5.RELEASE.jar (2.2 kB at 3.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar (668 kB at 866 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar (1.1 MB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.5.RELEASE/spring-boot-autoconfigure-1.4.5.RELEASE.jar (970 kB at 1.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar (274 kB at 307 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.5.RELEASE/spring-boot-starter-jdbc-1.4.5.RELEASE.jar (2.3 kB at 2.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar (380 kB at 396 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar (41 kB at 36 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.jar (141 kB at 115 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar (428 kB at 322 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar (113 kB at 82 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar (188 kB at 104 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar (445 kB at 241 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar (314 kB at 155 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar (75 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar (31 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar (1.9 MB at 763 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar (613 kB at 247 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/1.10.8.RELEASE/spring-data-jpa-1.10.8.RELEASE.jar (284 kB at 113 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/1.12.8.RELEASE/spring-data-commons-1.12.8.RELEASE.jar (699 kB at 237 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar (5.6 MB at 1.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.2.9.RELEASE/spring-expression-4.2.9.RELEASE.jar (263 kB at 86 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/4.2.9.RELEASE/spring-orm-4.2.9.RELEASE.jar (467 kB at 151 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.2.9.RELEASE/spring-tx-4.2.9.RELEASE.jar (265 kB at 82 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.22/jcl-over-slf4j-1.7.22.jar (17 kB at 5.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.2.9.RELEASE/spring-beans-4.2.9.RELEASE.jar (732 kB at 225 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.2.9.RELEASE/spring-context-4.2.9.RELEASE.jar (1.1 MB at 336 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.jar (59 kB at 18 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar (63 kB at 19 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar (67 kB at 20 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar (39 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar (118 kB at 33 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar (284 kB at 79 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar (327 kB at 91 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar (704 kB at 193 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar (41 kB at 11 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar (41 kB at 11 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.jar (1.5 MB at 397 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar (199 kB at 51 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar (502 kB at 124 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar (1.2 MB at 293 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 689 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 630 source files to /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/target/classes
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/src/main/java/edu/cmu/tetradapp/editor/LoadKnowledgeAction.java: Some input files use or override a deprecated API.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/src/main/java/edu/cmu/tetradapp/editor/LoadKnowledgeAction.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/src/main/java/edu/cmu/tetradapp/workbench/AbstractWorkbench.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/src/main/java/edu/cmu/tetradapp/workbench/AbstractWorkbench.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-gui ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-gui ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-gui ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tetrad-gui ---
+[INFO] Building jar: /home/parallels/Downloads/tetrad-IGFci-master/tetrad-gui/target/tetrad-gui-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ tetrad-gui ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 18 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 134 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 694 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.pom (7.6 kB at 155 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.pom (1.9 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/6.0_BETA/asm-parent-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/6.0_BETA/asm-parent-6.0_BETA.pom (5.5 kB at 204 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom (9.5 kB at 272 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.pom (2.1 kB at 72 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.pom (2.1 kB at 46 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom (1.8 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom (7.3 kB at 207 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom (2.0 kB at 73 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom (28 kB at 929 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.pom (11 kB at 399 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.pom (2.1 kB at 57 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.pom (2.1 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom (6.8 kB at 252 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom (9.9 kB at 67 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.jar (51 kB at 855 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.jar (34 kB at 482 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0_BETA/asm-6.0_BETA.jar (56 kB at 672 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar (64 kB at 415 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar (151 kB at 982 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (4.3 kB at 26 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar (134 kB at 777 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.jar (123 kB at 684 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.jar (22 kB at 117 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.jar (21 kB at 99 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.jar (47 kB at 97 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar (2.3 MB at 3.5 MB/s)
+[INFO] Including edu.cmu:tetrad-lib:jar:6.8.0-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.commons:commons-math3:jar:3.5 in the shaded jar.
+[INFO] Including org.apache.commons:commons-collections4:jar:4.0 in the shaded jar.
+[INFO] Including colt:colt:jar:1.2.0 in the shaded jar.
+[INFO] Including concurrent:concurrent:jar:1.3.4 in the shaded jar.
+[INFO] Including xom:xom:jar:1.2.5 in the shaded jar.
+[INFO] Including xml-apis:xml-apis:jar:1.3.03 in the shaded jar.
+[INFO] Including xerces:xercesImpl:jar:2.8.0 in the shaded jar.
+[INFO] Including xalan:xalan:jar:2.7.0 in the shaded jar.
+[INFO] Including jdepend:jdepend:jar:2.9.1 in the shaded jar.
+[INFO] Including gov.nist.math:jama:jar:1.0.3 in the shaded jar.
+[INFO] Including javax.help:javahelp:jar:2.0.05 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.7 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpclient:jar:4.5.2 in the shaded jar.
+[INFO] Including org.json:json:jar:20160810 in the shaded jar.
+[INFO] Including javax.xml.bind:jaxb-api:jar:2.3.0 in the shaded jar.
+[INFO] Including org.jsoup:jsoup:jar:1.11.2 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:data-reader:jar:6.8.0-SNAPSHOT in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.14.0 in the shaded jar.
+[INFO] Including junit:junit:jar:4.12 in the shaded jar.
+[INFO] Including org.hamcrest:hamcrest-core:jar:1.3 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:tetrad-db:jar:1.0.0 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-data-jpa:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-autoconfigure:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-logging:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.1.11 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.1.11 in the shaded jar.
+[INFO] Including org.slf4j:jul-to-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.slf4j:log4j-over-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.springframework:spring-core:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.17 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-aop:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-aop:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.aspectj:aspectjweaver:jar:1.8.9 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-jdbc:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.apache.tomcat:tomcat-jdbc:jar:8.5.11 in the shaded jar.
+[INFO] Including org.apache.tomcat:tomcat-juli:jar:8.5.11 in the shaded jar.
+[INFO] Including org.springframework:spring-jdbc:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.hibernate:hibernate-core:jar:5.0.12.Final in the shaded jar.
+[INFO] Including org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final in the shaded jar.
+[INFO] Including antlr:antlr:jar:2.7.7 in the shaded jar.
+[INFO] Including org.jboss:jandex:jar:2.0.0.Final in the shaded jar.
+[INFO] Including dom4j:dom4j:jar:1.6.1 in the shaded jar.
+[INFO] Including org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final in the shaded jar.
+[INFO] Including org.hibernate:hibernate-entitymanager:jar:5.0.12.Final in the shaded jar.
+[INFO] Including javax.transaction:javax.transaction-api:jar:1.2 in the shaded jar.
+[INFO] Including org.springframework.data:spring-data-jpa:jar:1.10.8.RELEASE in the shaded jar.
+[INFO] Including org.springframework.data:spring-data-commons:jar:1.12.8.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-orm:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-context:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-expression:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-tx:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-beans:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.slf4j:jcl-over-slf4j:jar:1.7.22 in the shaded jar.
+[INFO] Including org.springframework:spring-aspects:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.hibernate:hibernate-validator:jar:5.2.4.Final in the shaded jar.
+[INFO] Including javax.validation:validation-api:jar:1.1.0.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.2.1.Final in the shaded jar.
+[INFO] Including com.fasterxml:classmate:jar:1.1.0 in the shaded jar.
+[INFO] Including javax.el:javax.el-api:jar:2.2.4 in the shaded jar.
+[INFO] Including org.glassfish.web:javax.el:jar:2.2.4 in the shaded jar.
+[INFO] Including org.hsqldb:hsqldb:jar:2.3.3 in the shaded jar.
+[INFO] Including edu.pitt.dbmi.ccd:causal-tetrad-rest-client:jar:0.1.0 in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.2 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.10 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpcore:jar:4.4.5 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpmime:jar:4.5.2 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.21 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-core:jar:2.6.2 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-api:jar:2.6.2 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:ccd-commons:jar:0.3.1 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.8.1 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-log4j12:jar:1.7.26 in the shaded jar.
+[INFO] Including log4j:log4j:jar:1.2.17 in the shaded jar.
+[INFO] Including org.reflections:reflections:jar:0.9.11 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:20.0 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.21.0-GA in the shaded jar.
+[INFO] Including de.bwaldvogel:liblinear:jar:1.95 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] logback-classic-1.1.11.jar, slf4j-log4j12-1.7.26.jar define 3 overlapping classes: 
+[WARNING]   - org.slf4j.impl.StaticMarkerBinder
+[WARNING]   - org.slf4j.impl.StaticLoggerBinder
+[WARNING]   - org.slf4j.impl.StaticMDCBinder
+[WARNING] jackson-databind-2.14.0.jar, jackson-core-2.14.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] xml-apis-1.3.03.jar, xom-1.2.5.jar define 1 overlapping classes: 
+[WARNING]   - org.w3c.dom.UserDataHandler
+[WARNING] log4j-over-slf4j-1.7.24.jar, log4j-1.2.17.jar define 29 overlapping classes: 
+[WARNING]   - org.apache.log4j.spi.OptionHandler
+[WARNING]   - org.apache.log4j.spi.LoggerRepository
+[WARNING]   - org.apache.log4j.NDC
+[WARNING]   - org.apache.log4j.PatternLayout
+[WARNING]   - org.apache.log4j.LogManager
+[WARNING]   - org.apache.log4j.BasicConfigurator
+[WARNING]   - org.apache.log4j.spi.ErrorHandler
+[WARNING]   - org.apache.log4j.MDC
+[WARNING]   - org.apache.log4j.AppenderSkeleton
+[WARNING]   - org.apache.log4j.WriterAppender
+[WARNING]   - 19 more...
+[WARNING] jcl-over-slf4j-1.7.22.jar, commons-logging-1.2.jar define 6 overlapping classes: 
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog$1
+[WARNING]   - org.apache.commons.logging.Log
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog
+[WARNING]   - org.apache.commons.logging.LogConfigurationException
+[WARNING]   - org.apache.commons.logging.impl.NoOpLog
+[WARNING]   - org.apache.commons.logging.LogFactory
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Tetrad Project 6.8.0-SNAPSHOT:
+[INFO] 
+[INFO] Tetrad Project ..................................... SUCCESS [  0.069 s]
+[INFO] data-reader ........................................ SUCCESS [  5.146 s]
+[INFO] tetrad-lib ......................................... SUCCESS [ 13.320 s]
+[INFO] tetrad-gui ......................................... SUCCESS [ 38.815 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  57.596 s
+[INFO] Finished at: 2022-11-17T20:35:06-05:00
+[INFO] ------------------------------------------------------------------------
+parallels@parallels-Parallels-Virtual-Platform:~/Downloads/tetrad-IGFci-master$ 

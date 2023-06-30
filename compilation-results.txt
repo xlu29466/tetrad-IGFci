@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Tetrad Project                                                     [pom]
+[INFO] data-reader                                                        [jar]
+[INFO] tetrad-lib                                                         [jar]
+[INFO] 
+[INFO] ---------------------------< edu.cmu:tetrad >---------------------------
+[INFO] Building Tetrad Project 6.8.0-SNAPSHOT                             [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad ---
+[INFO] 
+[INFO] ---------------------< edu.pitt.dbmi:data-reader >----------------------
+[INFO] Building data-reader 6.8.0-SNAPSHOT                                [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from ccd-releases: https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+Downloading from ccd-snapshots: https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[WARNING] Could not transfer metadata com.fasterxml.jackson.core:jackson-databind/maven-metadata.xml from/to ccd-releases (https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/): transfer failed for https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[WARNING] Could not transfer metadata com.fasterxml.jackson.core:jackson-databind/maven-metadata.xml from/to ccd-snapshots (https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/): transfer failed for https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ data-reader ---
+[INFO] Deleting /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ data-reader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ data-reader ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target/classes
+[WARNING] /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ data-reader ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ data-reader ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ data-reader ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ data-reader ---
+[INFO] Building jar: /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target/data-reader-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-lib >-------------------------
+[INFO] Building tetrad-lib 6.8.0-SNAPSHOT                                 [3/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] com.fasterxml.jackson.core:jackson-databind/maven-metadata.xmlfailed to transfer from https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/ during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of ccd-releases has elapsed or updates are forced. Original error: Could not transfer metadata com.fasterxml.jackson.core:jackson-databind/maven-metadata.xml from/to ccd-releases (https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/): transfer failed for https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[WARNING] com.fasterxml.jackson.core:jackson-databind/maven-metadata.xmlfailed to transfer from https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/ during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of ccd-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.fasterxml.jackson.core:jackson-databind/maven-metadata.xml from/to ccd-snapshots (https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/): transfer failed for https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-lib ---
+[INFO] Deleting /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-lib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1053 source files to /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/classes
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MbClassify.java: Some input files use or override a deprecated API.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MbClassify.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MimAdjacencySearch.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MimAdjacencySearch.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ tetrad-lib ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 1 file to /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/classes/manual
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-lib ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-lib ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-lib ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tetrad-lib ---
+[INFO] Building jar: /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/tetrad-lib-6.8.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Tetrad Project 6.8.0-SNAPSHOT:
+[INFO] 
+[INFO] Tetrad Project ..................................... SUCCESS [  0.058 s]
+[INFO] data-reader ........................................ SUCCESS [  2.661 s]
+[INFO] tetrad-lib ......................................... SUCCESS [ 11.242 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.205 s
+[INFO] Finished at: 2022-11-10T20:54:14-05:00
+[INFO] ------------------------------------------------------------------------

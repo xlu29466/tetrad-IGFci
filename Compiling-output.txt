@@ -1,0 +1,296 @@
+(base) dbmiadmins-ipro:tetrad-IGFci xinghua$ mvn clean
+-bash: mvn: command not found
+(base) dbmiadmins-ipro:tetrad-IGFci xinghua$ export PATH=$PATH:~/GitHub/apache-maven-3.8.6/bin/
+(base) dbmiadmins-ipro:tetrad-IGFci xinghua$ mvn clean
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Tetrad Project                                                     [pom]
+[INFO] data-reader                                                        [jar]
+[INFO] tetrad-lib                                                         [jar]
+[INFO] tetrad-gui                                                         [jar]
+[INFO] 
+[INFO] ---------------------------< edu.cmu:tetrad >---------------------------
+[INFO] Building Tetrad Project 6.8.0-SNAPSHOT                             [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad ---
+[INFO] 
+[INFO] ---------------------< edu.pitt.dbmi:data-reader >----------------------
+[INFO] Building data-reader 6.8.0-SNAPSHOT                                [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ data-reader ---
+[INFO] Deleting /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-lib >-------------------------
+[INFO] Building tetrad-lib 6.8.0-SNAPSHOT                                 [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-lib ---
+[INFO] Deleting /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-gui >-------------------------
+[INFO] Building tetrad-gui 6.8.0-SNAPSHOT                                 [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-gui ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Tetrad Project 6.8.0-SNAPSHOT:
+[INFO] 
+[INFO] Tetrad Project ..................................... SUCCESS [  0.053 s]
+[INFO] data-reader ........................................ SUCCESS [  0.016 s]
+[INFO] tetrad-lib ......................................... SUCCESS [  0.212 s]
+[INFO] tetrad-gui ......................................... SUCCESS [  0.001 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.505 s
+[INFO] Finished at: 2022-11-17T16:29:35-05:00
+[INFO] ------------------------------------------------------------------------
+(base) dbmiadmins-ipro:tetrad-IGFci xinghua$ mvn clean package -Dmaven.test.skip=true -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Tetrad Project                                                     [pom]
+[INFO] data-reader                                                        [jar]
+[INFO] tetrad-lib                                                         [jar]
+[INFO] tetrad-gui                                                         [jar]
+[INFO] 
+[INFO] ---------------------------< edu.cmu:tetrad >---------------------------
+[INFO] Building Tetrad Project 6.8.0-SNAPSHOT                             [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad ---
+[INFO] 
+[INFO] ---------------------< edu.pitt.dbmi:data-reader >----------------------
+[INFO] Building data-reader 6.8.0-SNAPSHOT                                [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ data-reader ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ data-reader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ data-reader ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target/classes
+[WARNING] /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/xinghua/GitHub/tetrad-IGFci/data-reader/src/main/java/edu/pitt/dbmi/data/reader/tabular/MixedTabularDataColumn.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ data-reader ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ data-reader ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ data-reader ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ data-reader ---
+[INFO] Building jar: /Users/xinghua/GitHub/tetrad-IGFci/data-reader/target/data-reader-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-lib >-------------------------
+[INFO] Building tetrad-lib 6.8.0-SNAPSHOT                                 [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-lib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-lib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1053 source files to /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/classes
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MbClassify.java: Some input files use or override a deprecated API.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MbClassify.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MimAdjacencySearch.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/src/main/java/edu/cmu/tetrad/search/MimAdjacencySearch.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ tetrad-lib ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 1 file to /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/classes/manual
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-lib ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-lib ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-lib ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tetrad-lib ---
+[INFO] Building jar: /Users/xinghua/GitHub/tetrad-IGFci/tetrad-lib/target/tetrad-lib-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------------< edu.cmu:tetrad-gui >-------------------------
+[INFO] Building tetrad-gui 6.8.0-SNAPSHOT                                 [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tetrad-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tetrad-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 689 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ tetrad-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 630 source files to /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/target/classes
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/src/main/java/edu/cmu/tetradapp/model/YeastPcCcdSearchWrapper.java: Some input files use or override a deprecated API.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/src/main/java/edu/cmu/tetradapp/model/YeastPcCcdSearchWrapper.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/src/main/java/edu/cmu/tetradapp/app/FontSelectionAction.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/src/main/java/edu/cmu/tetradapp/app/FontSelectionAction.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tetrad-gui ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ tetrad-gui ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tetrad-gui ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tetrad-gui ---
+[INFO] Building jar: /Users/xinghua/GitHub/tetrad-IGFci/tetrad-gui/target/tetrad-gui-6.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ tetrad-gui ---
+[INFO] Including edu.cmu:tetrad-lib:jar:6.8.0-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.commons:commons-math3:jar:3.5 in the shaded jar.
+[INFO] Including org.apache.commons:commons-collections4:jar:4.0 in the shaded jar.
+[INFO] Including colt:colt:jar:1.2.0 in the shaded jar.
+[INFO] Including concurrent:concurrent:jar:1.3.4 in the shaded jar.
+[INFO] Including xom:xom:jar:1.2.5 in the shaded jar.
+[INFO] Including xml-apis:xml-apis:jar:1.3.03 in the shaded jar.
+[INFO] Including xerces:xercesImpl:jar:2.8.0 in the shaded jar.
+[INFO] Including xalan:xalan:jar:2.7.0 in the shaded jar.
+[INFO] Including jdepend:jdepend:jar:2.9.1 in the shaded jar.
+[INFO] Including gov.nist.math:jama:jar:1.0.3 in the shaded jar.
+[INFO] Including javax.help:javahelp:jar:2.0.05 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.7 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpclient:jar:4.5.2 in the shaded jar.
+[INFO] Including org.json:json:jar:20160810 in the shaded jar.
+[INFO] Including javax.xml.bind:jaxb-api:jar:2.3.0 in the shaded jar.
+[INFO] Including org.jsoup:jsoup:jar:1.11.2 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:data-reader:jar:6.8.0-SNAPSHOT in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.14.0 in the shaded jar.
+[INFO] Including junit:junit:jar:4.12 in the shaded jar.
+[INFO] Including org.hamcrest:hamcrest-core:jar:1.3 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:tetrad-db:jar:1.0.0 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-data-jpa:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-autoconfigure:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-logging:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.1.11 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.1.11 in the shaded jar.
+[INFO] Including org.slf4j:jul-to-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.slf4j:log4j-over-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.springframework:spring-core:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.17 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-aop:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-aop:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.aspectj:aspectjweaver:jar:1.8.9 in the shaded jar.
+[INFO] Including org.springframework.boot:spring-boot-starter-jdbc:jar:1.4.5.RELEASE in the shaded jar.
+[INFO] Including org.apache.tomcat:tomcat-jdbc:jar:8.5.11 in the shaded jar.
+[INFO] Including org.apache.tomcat:tomcat-juli:jar:8.5.11 in the shaded jar.
+[INFO] Including org.springframework:spring-jdbc:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.hibernate:hibernate-core:jar:5.0.12.Final in the shaded jar.
+[INFO] Including org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final in the shaded jar.
+[INFO] Including antlr:antlr:jar:2.7.7 in the shaded jar.
+[INFO] Including org.jboss:jandex:jar:2.0.0.Final in the shaded jar.
+[INFO] Including dom4j:dom4j:jar:1.6.1 in the shaded jar.
+[INFO] Including org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final in the shaded jar.
+[INFO] Including org.hibernate:hibernate-entitymanager:jar:5.0.12.Final in the shaded jar.
+[INFO] Including javax.transaction:javax.transaction-api:jar:1.2 in the shaded jar.
+[INFO] Including org.springframework.data:spring-data-jpa:jar:1.10.8.RELEASE in the shaded jar.
+[INFO] Including org.springframework.data:spring-data-commons:jar:1.12.8.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-orm:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-context:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-expression:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-tx:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-beans:jar:4.2.9.RELEASE in the shaded jar.
+[INFO] Including org.slf4j:jcl-over-slf4j:jar:1.7.22 in the shaded jar.
+[INFO] Including org.springframework:spring-aspects:jar:4.3.7.RELEASE in the shaded jar.
+[INFO] Including org.hibernate:hibernate-validator:jar:5.2.4.Final in the shaded jar.
+[INFO] Including javax.validation:validation-api:jar:1.1.0.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.2.1.Final in the shaded jar.
+[INFO] Including com.fasterxml:classmate:jar:1.1.0 in the shaded jar.
+[INFO] Including javax.el:javax.el-api:jar:2.2.4 in the shaded jar.
+[INFO] Including org.glassfish.web:javax.el:jar:2.2.4 in the shaded jar.
+[INFO] Including org.hsqldb:hsqldb:jar:2.3.3 in the shaded jar.
+[INFO] Including edu.pitt.dbmi.ccd:causal-tetrad-rest-client:jar:0.1.0 in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.2 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.10 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpcore:jar:4.4.5 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpmime:jar:4.5.2 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.21 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-core:jar:2.6.2 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-api:jar:2.6.2 in the shaded jar.
+[INFO] Including edu.pitt.dbmi:ccd-commons:jar:0.3.1 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.8.1 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-log4j12:jar:1.7.26 in the shaded jar.
+[INFO] Including log4j:log4j:jar:1.2.17 in the shaded jar.
+[INFO] Including org.reflections:reflections:jar:0.9.11 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:20.0 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.21.0-GA in the shaded jar.
+[INFO] Including de.bwaldvogel:liblinear:jar:1.95 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] xom-1.2.5.jar, xml-apis-1.3.03.jar define 1 overlapping classes: 
+[WARNING]   - org.w3c.dom.UserDataHandler
+[WARNING] jackson-databind-2.14.0.jar, jackson-core-2.14.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] logback-classic-1.1.11.jar, slf4j-log4j12-1.7.26.jar define 3 overlapping classes: 
+[WARNING]   - org.slf4j.impl.StaticMarkerBinder
+[WARNING]   - org.slf4j.impl.StaticLoggerBinder
+[WARNING]   - org.slf4j.impl.StaticMDCBinder
+[WARNING] log4j-1.2.17.jar, log4j-over-slf4j-1.7.24.jar define 29 overlapping classes: 
+[WARNING]   - org.apache.log4j.spi.OptionHandler
+[WARNING]   - org.apache.log4j.spi.LoggerRepository
+[WARNING]   - org.apache.log4j.NDC
+[WARNING]   - org.apache.log4j.PatternLayout
+[WARNING]   - org.apache.log4j.LogManager
+[WARNING]   - org.apache.log4j.BasicConfigurator
+[WARNING]   - org.apache.log4j.spi.ErrorHandler
+[WARNING]   - org.apache.log4j.MDC
+[WARNING]   - org.apache.log4j.AppenderSkeleton
+[WARNING]   - org.apache.log4j.WriterAppender
+[WARNING]   - 19 more...
+[WARNING] jcl-over-slf4j-1.7.22.jar, commons-logging-1.2.jar define 6 overlapping classes: 
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog$1
+[WARNING]   - org.apache.commons.logging.Log
+[WARNING]   - org.apache.commons.logging.impl.SimpleLog
+[WARNING]   - org.apache.commons.logging.LogConfigurationException
+[WARNING]   - org.apache.commons.logging.impl.NoOpLog
+[WARNING]   - org.apache.commons.logging.LogFactory
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Tetrad Project 6.8.0-SNAPSHOT:
+[INFO] 
+[INFO] Tetrad Project ..................................... SUCCESS [  0.057 s]
+[INFO] data-reader ........................................ SUCCESS [  2.108 s]
+[INFO] tetrad-lib ......................................... SUCCESS [  9.451 s]
+[INFO] tetrad-gui ......................................... SUCCESS [ 10.953 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.799 s
+[INFO] Finished at: 2022-11-17T16:30:14-05:00
+[INFO] ------------------------------------------------------------------------
